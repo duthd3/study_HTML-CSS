@@ -157,5 +157,33 @@
 <a href="#앵커 이름">텍스트 또는 이미지</a>
 ```
 
-  
+  - 4.\<map태그,\<area태그>,usemap속성 - 이미지 맵 저장하기
+    - 이미지상에서 클릭 위치에 따라 서로 다른 링크가 열리는 것.
+```html
+<map name="맵이름"
+     <area>
+     <area>
+      ......
+</map>
+
+<img src="이미지 파일" usemap="#맵이름">
+```
+
+|속성|설명|
+|--|--|
+|alt|대체 텍스트를 지정합니다.|
+|coords|링크로 사용할 영역을 시작 좌표와 끝 좌표를 이용해 지정.|
+|download|링크를 클릭했을 때 링크 문서를 다운로드|
+|href|링크 문서 경로를 지정.|
+|media|링크 문서를 어떤 미디어에 최적화시킬지 지정.|
+|rel|현재문서와 링크 문서 사이의 관계를 지정(속성값: Iternate,bookmark,help,license,next,nofollow,noreferer,prefetch,prev,search,tag)|
+|shape|링크로 사용할 영역의 형태를 지정(속성값:default,rect,circle,poly)|
+|target|링크를 표시할 대상을 지정|
+|type|링크 문서의 미디어 유형을 지정|
+
+### SVG이미지
+- 벡터이미지(아무리 확대하여도 테두리 부분이 울퉁불퉁하지 않는다.)
+
+
+
     
