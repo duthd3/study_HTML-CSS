@@ -184,6 +184,126 @@
 ### SVG이미지
 - 벡터이미지(아무리 확대하여도 테두리 부분이 울퉁불퉁하지 않는다.)
 
+4.## 폼관련 태그
+### \<form>태그-폼만들기
+```html
+<form[속성="속성 값"]> 여러 폼 요소 </form>
+```
+- 1.form태그 속성
+  - method:get,post
+  - name:폼의 이름 지정
+  - action: 서버 상의 프로그램 지정
+  - target:action속성에서 지정한 스크립트 파일을 현재창이 아닌 다른 위치에 열도록
+  - autocomplete:자동완성 기능
+### \<label>태그-폼 요소에 레이블 붙이기
 
+```html
+기본형1- <label [속성="속성 값"]> 레이블</label>
+기본형2- <label for="id이름">레이블</label>
+        <input id ="id이름"[속성 = "속성 값"]>
+```
+### \<fieldset>,<legend>태그 - 폼 요소 그룹으로 묶기
+- \<fieldset>태그는 \<fieldset>과\</fieldset> 태그 사이의 폼들을 하나의 영역으로 묶고 외곽선을 그려준다.
+- \<legend>태그는 \<fieldset>태그로 묶은 그룹에 제목을 붙여준다.
+ 
+### \<input>태그
+- 폼에서 사용자 입력을 받기위해 사용하는 태그
+- 1.\<input>태그-입력 항목 만들기
+  ```html
+  <input type = "유형" [속성="속성 값"]>
+  ```
+- 2.type="hidden"-히든 필드 만들기
+  ```html
+  <input type="hidden" name="이름" value="서버로 넘길 값">
+  ```
+- 3.type="text"-텍스트 필드 만들기
+  ```html
+  <input type="text"[속성="속성 값"]>
+  ```
+- 4.type="password"-비밀번호 입력란 만들기
+  ```html
+  <input type="password"[속성="속성 값"]>
+  ```
+- 5.type="search"-검색 상자 만들기
+  ```html
+  <input type="search"[속성="속성 값"]>
+  ```
+- 6.type="url"-URL 입력란 만들기
+  ```html
+  <input type="url"[속성="속성 값"]>
+  ```
+- 7.type="email"-메일 주소 입력란 만들기
+  ```html
+  <input type="email"[속성="속성 값"]>
+  ```
+- 8.type="tel"-전화번호 입력란 만들기
+  ```html
+  <input type="tel"[속성="속성 값"]>
+  ```
+- 9.type="number"-숫자 입력하기
+  ```html
+  <input type="number" [속성="속성 값"]>
+  ```
+- 10.type="range"-슬라이드 막대로 숫자 지정하기
+  ```html
+  <input type="range" [속성="속성 값"]>
+  ```
+- 11.type="radio",type="checkbox"-라디오 버튼과 체크박스 넣기
+  - 한 개만 선택:radio
+  - 두개 이상 선택:checkbox
+  ```html
+  <input type="radio" [속성="속성 값"]>
+  <input type="checkbox" [속성="속성 값"]>
+  ```
+- 12.type="color"-색상 선택 상자 표시하기
+  ```html
+  <input type="color" [value="기본 색"[속성="속성 값"]>
+  ```
+- 13.type="date","month","week"-날짜 표시하기
+  ```html
+  <input type="date","month","week"[value="기본 값" 속성="속성 값"]>
+  ```
+  - date:날짜 선택
+  - month:월과 연도 선택
+  - week:주와 연도 선택
+- 14.type="time","datetime","datetime-local"-시간 지정하기
+  ```html
+  <input type="date","datetime","datetime-local"[value="기본 값" 속성="속성 값"]>
+  ```
+- 15.type="submit",type="reset"-서버 전송,리셋 버튼 넣기
+  - reset 버튼은 \<input>요소에 입력된 모든 정보를 재설정해 사용자가 입력한 내용을 모두 지운다.
+  - submit버튼은 폼에 입력한 정보를 서버로 전송한다.
+  ```html
+  <input type="submit","reset"[value="기본 값"] [속성="속성 값"]>
+  ```
+- 16.type="image"-이미지 버튼 넣기
+  - type="image"를 사용하면 submit버튼 대신 전송 이미지를 넣을 수 있다.
+  ```html
+  <input type="image" src="경로" alt="대체 텍스트" [속성="속성 값"]>
+  ```
+- 17.type="button"-버튼 넣기
+  ```html
+  <input type="button" [value="버튼 내용"][속성-"속성 값"]>
+  ```
+- 18.type="file"-파일 첨부하기
+  ```html
+  <input type="file"[속성="속성 값"]>
+  ```
+         
+                                                 
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                       
+                                                                      
+                                                                      
+  
+                         
+                         
+                        
+                   
+  
 
+  
     
