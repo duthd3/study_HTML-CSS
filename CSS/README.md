@@ -53,6 +53,46 @@
     h1,h2{
       text-align:center;
       }
-   ```    
+  ```    
+      
+## 텍스트 관련 스타일
+- 1.글꼴 관련 스타일
+  - font-family속성:글꼴 지정하기
+    
+  ```html
+    font-family:<글꼴이름>
+    font-family:"맑은 고딕", 돋움, 굴림 //맑은 고딕이 없을때를 대비
+  ```
+      
+  - @font-face 속성: 웹 폰트 사용하기
+    - 웹 문서 안에 글꼴정보도 함께 저장하고 사용자가 웹문서에 접속하면 글꼴을 사용자 시스템으로 다운로드시키는 방식.
+    ```html
+    @font-face{
+      font-family:글꼴 이름;
+      src:url.fomat;
+    }
+    ```
+    
+   - font-size 속성:글자크기 조절하기
+      ```html
+      font-size:<절대크기>|<상대크기>|<크기>|<백분율> (4종류의 유형)
+      ```
+     - px단위 사용
+       - 웹에서 주로 사용. 모바일에서 불리.
+     - em단위 사용
+       - 부모 요소에서 지정한 폰트의 대문자  M의 너비를 1em 기준으로 상대적 값을 계산.
+    
+   - font-weight 속성:글자 굵기 지정하기
+      ```html
+      font-weight:normal|bold|bolder|lighter|100|200|300|400|500|600|700|800|900
+      ```
+   - font-variant 속성: 작은 대문자로 표시하기
+      ```html
+      font-variant:normal|small-caps
+      ```
+   - font-style 속성:글자 스타일 지정하기
+      ```html
+      font-style:normal|italic|oblique
+      ```
       
       
