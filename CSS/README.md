@@ -105,3 +105,29 @@
       text-decoration:none|underline|overline|line-through
       ```
       
+      - text-transform속성:텍스트 대,소문자 변환하기
+      ```html
+      text-transform:none|capitalize|uppercase|lowercase|full-width
+      ```
+      - capitalize: 시작하는 첫 번째 글자를 대문자로 변환한다.
+      - uppercase: 모든 글자를 대문자로 변환한다.
+      - lowercase: 모든 글자를 소문자로 변환한다.
+      - full-width: 가능한 모든 문자를 전각 문자로 변환한다.
+      
+      - text-shadow속성: 텍스트에 그림자 효과 추가하기
+      ```html
+      text-shadow: none|<가로거리><세로거리><번짐 정도><색상>
+      ```
+      
+      - white-space속성: 공백 처리하기
+      ```html
+      white-space:normal|nowrap|pre|pre-line|pre-wrap
+      ```
+      
+      - letter-spacing, word-spacing속성:텍스트 간격 조절하기
+      ```html
+      letter-spacing:normal|<크기>
+      word-spacing:normal|<크기>
+      ```
+      
+      
