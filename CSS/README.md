@@ -93,6 +93,15 @@
    - font-style 속성:글자 스타일 지정하기
       ```html
       font-style:normal|italic|oblique
+      ``` 
+  - 2.텍스트 스타일
+      - color속성:글자 색 지정하기
+      ```html
+      color:<색상>
       ```
       
+      - text-decoration속성:텍스트에 줄 표시하기/없애기
+      ```html
+      text-decoration:none|underline|overline|line-through
+      ```
       
