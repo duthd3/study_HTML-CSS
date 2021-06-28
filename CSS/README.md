@@ -130,4 +130,34 @@
       word-spacing:normal|<크기>
       ```
       
+- 3.문단 스타일
+      - direction속성:글자 쓰기 방향 지정하기
+      ```html
+      direction:ltr|rtl
+      ```
+        - ltr:왼쪽에서 오른쪽으로 텍스트 표시. 기본형.
+        - rtl:오른쪽에서 왼쪽으로 텍스트 표시.
+      - text-align속성:텍스트 정렬하기
+      ```html
+      text-align:start|end|left|right|center|justify|match-parent
+      ```
       
+      - text-justify속성:정렬 시 공백 조절하기
+      ```html
+      text-justify:auto|none|inter-word|distribute
+      ```
+      
+      - text-indent속성:텍스트 들여쓰기
+      ```html
+      text-indent:<크기>|<백분율>
+      ```
+      
+      - line-height속성:줄 간격 조절하기
+      ```html
+      line-height:normal|<숫자>|<크기>|<백분율>|inherit
+      ```
+      
+      - text-overflow속성:넘치는 텍스트 표기하기
+      ```html
+      text-overflow:clip|ellipsis
+      ```
