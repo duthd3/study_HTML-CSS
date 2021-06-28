@@ -161,3 +161,15 @@
     ```html
     text-overflow:clip|ellipsis
     ```
+- 4.목록 스타일
+    - list-style-type속성:목록의 불릿과 번호 스타일 지정하기
+    ```html
+    list-style-type:none|<순서 없는 목록의 불릿>|<순서 목록의 번호>
+    ```
+      
+    - list-style-image속성:불릿 대신 이미지 넣기
+    ```html
+    list-style-image:<이미지>|none
+    <이미지>=url(이미지 파일 경로)
+    ```
+      
