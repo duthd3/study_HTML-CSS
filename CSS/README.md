@@ -171,5 +171,95 @@
     ```html
     list-style-image:<이미지>|none
     <이미지>=url(이미지 파일 경로)
+    ``` 
+
+## 색상과 배경
+  - 웹에서 색상 표현하기
+    - 1.16진수 표기법
+      - ##RRGGBB(빨간색,초록색,파란색)
+    - 2.rgb와 rgba표기법
+    ```html
+      rgb(red 값, green값, blue값);
+      rgba(red 값, green값, blue값, alpha값);(alpha는 불투명도 값을 나타낸다.)
+      
+      color:rgb(255, 0 , 0) //빨간색 표현
     ```
+    - 3.hsl과 hsla표기법
+      ```html
+      hue(색상), saturation(채도), lightness(밝기)
+      hsl(<hue 값>, <saturation 값>, <lightness 값>);
+      hsla(<hue 값>, <saturation 값>, <lighteness 값>, <alpha 값>);
+      ```
+    - 4.색상이름 표기법
+      - black;
+      - red;
+  - 배경 색과 배경 이미지
+    - 1.background-color속성:배경 색 지정하기
+      ```html
+      background-color:<색상>
+      ```
+      - background-color값은 상속x
+      
+    - 2.background-clip속성:배경 적용 범위 조절하기
+      ```html
+      background-clip: border-box|padding-box|content-box
+      ```
+    - 3.background-image속성: 웹 요소에 배경 이미지 넣기
+      ```html
+      background-image:url(파일경로)
+      ```
+    - 4.background-repeat속성:배경 이미지 반복 방법 지정하기
+      ```html
+      background-repeat:repeat|repeat-x|repeat-y|no-repeat
+      ```
+    - 5.background-size속성: 배경 이미지 크기 조절하기
+      ```html
+      background-size:auto|contain|cover|<크기 값>|<백분율>
+      ```
+    - 6.background-position속성: 배경 이미지 위치 조절하기
+      ```html
+      background-position:<수평위치><수직위치>;
+      수평위치: left|center|right|<백분율>|<길이 값>
+      수직위치: top|center|bottom|<백분율>|>길이 값>
+      ```
+      
+    - 7.background-origin속성:배경 이미지 배치할 기준 조절하기
+      ```html
+      background-origin:border-box|padding-box|content-box
+      ```
+      
+    - 8.background-attachment속성: 배경 이미지 고정하기
+      ```html
+      background-attachment:scroll|fixed
+      ```
+     
+    - 9.background속성: 속성 하나로 배경 이미지 제어하기
+      
+## 그라데이션효과로 배경 꾸미기
+  - 1. 그라데이션과 브라우저 접두사
+    - -webkit-:사파리5.1~6.0
+    - -moz-:파이어폭스3.6~15
+    - -o-:오페라11.1~12.0
+  - 2. 선형그라데이션
+    ```html
+      linear-gradient(<각도> to <방향>, color-stop, [color-stop,...]);
+    ```
+    - 방향
+      - to top:아래에서 위로
+      - to left:오른쪽에서 왼쪽으로
+      - to right:왼쪽에서 오른쪽으로
+      - to bottom:위에서 아래로
+  - 3. 원형그라데이션
+    - 동심원을 그리며 바깥 방향으로 색상이 바뀐다.
+      - 모양
+      ```html
+      radial-gradient(<최종모양><크기>at<위치>, color-stop, [color-stop...])
+      ```
+      - 위치
+      - 크기
+        - closest-side속성 값(가장 가까운 요소의 수평축이나 수직축)
+        - closest-corner속성 값(가장 가까운 요소의 코너)
+        - farthest-side속성 값(가장 먼 모서리)
+        - farthest-corner속성 값(가장 먼 코너)
+      
       
