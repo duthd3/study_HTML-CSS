@@ -262,4 +262,76 @@
         - farthest-side속성 값(가장 먼 모서리)
         - farthest-corner속성 값(가장 먼 코너)
       
+ ## CSS와 박스모델
+   - 1.블록 레벨 요소와 인라인 레벨 요소
+     - 블록 레벨 요소는 태그를 사용해 요소를 삽입했을 때 혼자 한 줄을 차지
+     - 인라인 레벨 요소는 줄을 차지하지 않는 요소.
+     ```html
+      블록 레벨 태그:<p>,<h1>~<h6>,<ul>,<ol>,<div>,<blockquote>,<form>,<hr>,<table>,<fieldset>,<adress>
+      인라인 레벨 태그:<img>,<object>,<br>,<sub>,<sup>,<span>,<input>,<textarea>,<label>,<button>
+     ```
+   - 2.박스 모델 - 박스 형태의 콘텐츠
+     - 박스모델은 실제 콘텐츠영역, 패딩, 테두리, 마진등의 요소로 구성된다.
+     ```html
+      -콘텐츠 영역의 크기지정
+      width:<크기>|<백분율>|auto
+      height:<크기>|<백분율>|auto
+     ```
+   - 3.display속성:화면 배치 방법 결정하기
+     - 블록 레벨 요소를 인라인 레벨 요소로, 인라인 레벨 요소를 블록 레벨 요소로 바꿀 수 있다.
+     ```html
+      display: none|contents|block|inline|inline-block|table|table-cell
+     ```
+      
+## 테두리 관련 속성들
+  - 1.border-style속성:테두리 스타일 지정하기
+    ```html
+      border-style:none|hidden|dashed|dotted|double|groove|inset|outset|ridghe|solid
+      dashed:직선으로 된 점선
+      dotted:점선
+      double:이중선    
+      solid:실선
+    ```
+  - 2.border-width속성:테두리 두께 지정하기
+    ```html
+      border-top-width:<크기>|thin|medium|thick
+      border-right-width:<크기>|thin|medium|thick
+      border-bottom-width:<크기>|thin|medium|thick
+      border-left-width:<크기>|thin|medium|thick
+      border-width:<크기>|thin|medium|thick
+    ```
+  - 3.border-color속성:테두리 색상 지정하기
+    ```html
+      border-top-color:<색상>
+      border-right-color:<색상>
+      border-bottom-color:<색상>
+      border-left-color:<색상>
+      border-color:<색상>    
+    ```
+  - 4.border-radius속성:박스 모서리 둥글게 만들기
+    ```html
+      border-top-left-radius:<크기>|<백분율>
+      border-top-right-radius:<크기>|<백분율>
+      border-bottom-right-radius:<크기>|<백분율>
+      border-bottom-left-radius:<크기>|<백분율>
+      border-radius:<크기>|<백분율>
+    ```
+  - 5.box-shadow속성:선택한 요소에 그림자 효과 내기
+    ```html
+      box-shadow:none|<그림자 값>
+      <그림자 값>:<수평거리> <수직거리> <흐림 정도> <번짐정도> <색상> 
+    ```    
+      
+   
+       
+      
+      
+      
+      
+      
+      
+      
+    
+  
+      
       
