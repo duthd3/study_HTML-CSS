@@ -339,6 +339,22 @@
       padding:<크기>|<백분율>|auto  
     ```     
         
+## CSS 포지셔닝과 주요 속성들
+  - 1.CSS 포지셔닝
+    - 여러 요소를 적절한 위치에 배치.
+  - 2.box-sizing속성:박스 너비 기준 정하기
+    ```html
+      box-sizing:content-box|border-box
+      
+      content-box:width속성 값을 콘텐츠 영역 너비 값으로 사용. 기본값
+      border-box:width속성 값을 콘텐츠 영역에 테두리까지 포함한 박스 모델 전체 너비 값으로 사용.
+    ```    
+  - 3.float속성:왼쪽이나 오른쪽으로 배치하기
+    ```html
+      float:left|right|none
+    ```
+        p
+        
         
         
       
