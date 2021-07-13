@@ -322,9 +322,25 @@
       <그림자 값>:<수평거리> <수직거리> <흐림 정도> <번짐정도> <색상> 
     ```    
       
-   
-       
-      
+## 여백을 조절하는 속성들
+  - 1.margin속성:요소 주변 여백 설정하기
+    ```html
+      margin-top:<크기>|<백분율>|auto
+      margin-right:<크기>|<백분율>|auto
+      margin-bottom:<크기>|<백분율>|auto
+      margin-left:<크기>|<백분율>|auto  
+    ```   
+  - 2.padding속성:콘텐츠 영역과 테두리 사이 여백 설정하기
+    ```html
+      padding-top:<크기>|<백분율>|auto
+      padding-right:<크기>|<백분율>|auto
+      padding-bottom:<크기>|<백분율>|auto
+      padding-left:<크기>|<백분율>|auto
+      padding:<크기>|<백분율>|auto  
+    ```     
+        
+        
+        
       
       
       
