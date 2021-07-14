@@ -358,11 +358,57 @@
     ```html
       clear:none|left|right|both
     ```
+  - 5.position속성:배치 방법 지정하기
+    - 웹 문서 안의 요소들을 자유자재로 배치해 주는 속성.
+    ```html
+      position:static|relative|absolute|fixed
+      (static:요소를 문서의 흐름에 맞추어 배치.)
+      (relative:이전 요소에 자연스럽게 연결해 배치하되 위치를 지정할 수 있다.)-좌표
+      (absolute:원하는 위치를 지정해 배치.)-좌표
+      (fixed:지정한 위치에 고정해 배치.)-좌표
+    ```
+    - absoulte속성 값을 사용하려면 그 요소를 감싸는\<div>를 만들고 position을 relative로 지정해 놓고 사용해야 한다.
         
+  - 6.visibility속성:요소를 보이게 하거나 보이지 않게 하기      
+    ```html
+      visibility:visible|hidden|collapse
+    ```    
+  - 7.z-index속성:요소 쌓는 순서 정하기
+    ```html
+      z-index:<숫자>
+    ```
+    - 숫자가 작을수록 아래에 쌓이고 클수록 위에 쌓인다.    
         
-        
-      
-      
+## 다단으로 편집하기
+  - column-width:단의 너비 고정하고 다단 구성하기
+    ```html
+      column-width:<크기>|auto
+    ```
+  - column-count속성:단의 개수 고정하고 다단 구성하기
+    ```html
+      column-count:<숫자>|auto
+    ```
+  - column-gap속성:단과 단 사이 여백 지정하기
+    ```html
+      column-gap:<크기>|normal
+    ```
+  - column-rule속성:구분선의 색상, 스타일, 너비 지정하기
+    ```html
+      column-rule-color:<색상>
+      column-rule-style:none|hidden|dotted|dashed|solid
+      column-rule-width:<크기>|thin|medium|thick
+      column-rule:<너비><스타일><색상>
+    ```
+  - break-after속성: 다단 위치 지정하기
+    ```html
+      break-after:column|avoid-column
+      break-before:column|avoid-column
+      break-inside:column|avoid-column
+    ```
+  - column-span속성:여러 단을 하나로 합치기
+    ```html
+        column-span:1|all
+    ```
       
       
       
