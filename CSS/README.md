@@ -353,7 +353,11 @@
     ```html
       float:left|right|none
     ```
-        p
+  - 4.clear속성:float속성 해제하기
+    - float속성이 더 이상 유용하지 않다고 알려주는 속성이 clear속성이다.
+    ```html
+      clear:none|left|right|both
+    ```
         
         
         
