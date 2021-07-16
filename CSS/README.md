@@ -410,7 +410,30 @@
         column-span:1|all
     ```
       
-      
+## 표스타일
+  - caption-side속성: 표 제목 위치 정하기
+    ```html
+      caption-side: top|bottom
+    ```
+  - border속성: 표 테두리 스타일 결정하기
+  - border-collapse속성: 테두리 통합, 분리하기
+    ```html
+      border-collapse:collapse|separate
+    ```
+  - border-spacing속성: 인접한 셀 테두리 사이 거리 지정하기
+    ```html
+      border-spacing:<크기>
+    ```
+  - empty-cells속성: 빈 셀의 표시 여부 지정하기
+    ```html
+      empty-cells:show|hide
+    ```
+  - width,height속성:표 너비와 높이 지정하기
+        
+  - table-layout속성: 콘텐츠에 맞게 셀 너비 지정하기
+    ```html
+      table-layout:fixed|auto
+    ```
       
       
     
