@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background-color: red;
+            -webkit-animation-name:change-bg;
+            -moz-animation-name:change-bg;
+            -o-animation-name:change-bg;
+            animation-name:change-bg;
+            animation-duration:3s;
+
+        }
+        @keyframes change-bg{
+            from{
+                background-color:red;
+                border:1px solid black;
+            }
+            15%{
+                background-color: orange;
+            }
+            30%{
+                background-color: yellow;
+            }
+            45%{
+                background-color: green;
+            }
+            60%{
+                background-color: blue;
+            }
+            75%{
+                background-color: blueviolet;
+            }
+            
+            to{
+                background-color: purple;
+                border-radius:50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
