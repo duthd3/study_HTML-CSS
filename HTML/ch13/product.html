@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS3 애니메이션</title>
+  <style>
+    .prod-list {
+      list-style:none;
+      margin:0;
+      padding:0;
+     }
+      .prod-list li {
+        position: relative;
+        float: left;
+        padding: 0;
+        margin: 10px;
+        overflow: hidden;
+      }
+    .prod-list img {
+      margin:0;
+      padding:0;
+      float:left;
+      z-index:5;
+    }
+    .prod-list .caption{
+      position:absolut;
+      top:200px;
+      width:300px;
+      height:200px;
+      padding-top:20px;
+      background: rgba(0,0,0,0.6);
+      opacity:0;
+      transition:all 0.2s ease-in-out;
+      z-index:10;
+    }
+    .prod-list li:hover .caption{
+      opacity: 1;
+      transform:translateY(-200px);
+      
+    } 
+    .prod-list .caption h1, .prod-list .caption p{
+      color:yellow;
+      text-align: center;
+    }  
+  </style>
+</head>
+<body>
+  <h1>신상품 목록</h1>
+	<div id="container">
+		<ul class="prod-list">
+      <li>
+        <img src="images/생로랑1.jpg">
+        <div class="caption">
+          <h1><a href="https://img.danawa.com/prod_img/500000/099/723/img/4723099_1.jpg?shrink=500:500&_v=20170418154612">입생로랑 카드지갑</a></h1>
+          <p>상품 1 뚜비만 구입가능!!</p>
+          <p>가격 : 뚜비가 원하는 가격</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/원피스1.jpg">
+        <div class="caption">
+          <h1><a href="https://img.danawa.com/prod_img/500000/099/723/img/4723099_1.jpg?shrink=500:500&_v=20170418154612">원피스</a></h1>
+          <p>상품 2 뚜비만 구입가능!!</p>
+          <p>가격 : 뚜비가 원하는 가격</p>
+        </div>
+      </li>
+      <li>
+        <img src="images/prod3.jpg">
+        <div class="caption">
+          <h1>상품 3</h1>
+          <p>상품 3 설명 텍스트</p>
+          <p>가격 : 12,345원</p>
+        </div>
+      </li>
+    </ul>
+	</div>
+</body>
+</html>
